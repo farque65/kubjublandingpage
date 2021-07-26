@@ -13,8 +13,9 @@ module.exports = {
       colors: {
         orange: colors.orange,
         yellow: {
+          050: '#fffdf5',
           550: '#fcbf32'
-        }
+        },
       },
       fontFamily: {
         'arista': ['Arista Pro Trial']

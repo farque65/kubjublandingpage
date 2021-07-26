@@ -1,6 +1,6 @@
 export default function Subscribe() {
   return (
-    <div className="max-w-7xl mx-auto flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 bg-bee-picture">
+    <div className="max-w-7xl mx-auto flex items-center justify-center bg-yellow-050 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8">
         <div>
           <img
