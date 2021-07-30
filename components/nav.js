@@ -12,8 +12,8 @@ export default function Nav() {
             <span class="block relative w-6 h-px rounded-sm bg-white mt-1"></span>
           </button>
         </div> */}
-        <div class="lg:flex flex-grow items-center" id="example-navbar-warning">
-          <ul class="flex flex-col lg:flex-row list-none ml-auto">
+        <div class="flex flex-grow items-center" id="example-navbar-warning">
+          <ul class="flex flex-col flex-row list-none ml-auto">
               <li class="nav-item">
                 <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75" href="#about_section">
                   Learn More

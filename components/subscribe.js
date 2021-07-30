@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { supabase } from '../client'
+import { get } from 'lodash';
 
 export default function Subscribe() {
   const [email, setEmail] = useState("")
@@ -11,6 +12,7 @@ export default function Subscribe() {
 
   async function submitHandler(e) {
     e.preventDefault();
+    let countDuplicates = 0;
 
     if (!validEmailFormat(email)) {
       return;
@@ -18,15 +20,19 @@ export default function Subscribe() {
     
     const { selectData, selectError } = await supabase
       .from('emailList')
-      .select('Email')
+      .select('Email', {count: 'exact'})
       .eq('Email', email)
+      .then((result)=>{
+        countDuplicates = get(result, 'count') || 0;
+        return result;
+      })
 
       if(selectError) {
         throw new Error(selectError);
       }
 
-      if (selectData && selectData.length > 0) {
-          return;
+      if (countDuplicates > 0) {
+        window.location.reload();
       }
 
     const { insertData, insertError } = await supabase
@@ -38,8 +44,6 @@ export default function Subscribe() {
     if(insertError) {
       throw new Error(insertError);
     }
-
-    window.location.reload();
   }
 
   return (
