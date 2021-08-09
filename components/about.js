@@ -35,7 +35,7 @@ export default function About() {
                   <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-white text-yellow-900">
                     <feature.icon className="h-6 w-6" aria-hidden="true" />
                   </div>
-                  <p className="ml-16 text-lg leading-6 font-medium text-yellow-900">{feature.name}</p>
+                  <p className="ml-16 text-lg leading-6 font-bold text-yellow-900">{feature.name}</p>
                 </dt>
                 <dd className="mt-2 ml-16 text-base text-yellow-900">{feature.description}</dd>
               </div>
