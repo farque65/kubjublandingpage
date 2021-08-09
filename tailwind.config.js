@@ -8,7 +8,9 @@ module.exports = {
     extend: {
       backgroundImage: theme => ({
         'bee-picture': "url('https://drive.google.com/uc?id=1kuqKC-EtgfVnfK2gGD0zrEoBsLFc4kCv')",
-        'kubjub-instagram': "url('https://drive.google.com/uc?id=16WXtD-NkQoyPxD600-FY-1TdL37XUix0')"
+        'kubjub-instagram': "url('https://drive.google.com/uc?id=16WXtD-NkQoyPxD600-FY-1TdL37XUix0')",
+        'kubjub-logo-intro': "url('https://drive.google.com/uc?id=1TfG2qdJ_hTZTZqjYqJukfc5ldFh1xTT5')",
+        'kubjub-transparent': "url('https://drive.google.com/uc?id=103ylYPpLlQlUskgwi6zzKjQtLGdSRWoi')"
       }),
       colors: {
         orange: colors.orange,
